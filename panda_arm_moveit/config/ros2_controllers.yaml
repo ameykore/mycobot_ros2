@@ -7,7 +7,7 @@ controller_manager:
       type: joint_trajectory_controller/JointTrajectoryController
 
 
-    pickup_controller:
+    pickup:
       type: position_controllers/GripperActionController
 
 
@@ -29,6 +29,6 @@ panda_arm_controller:
     state_interfaces:
       - position
       - velocity
-pickup_controller:
+pickup:
   ros__parameters:
     joint: panda_finger_joint1
